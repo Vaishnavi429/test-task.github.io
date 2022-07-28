@@ -17,16 +17,14 @@ export default function ShowPayment({ paymentData }) {
                         <th>Remarks</th>
 
                     </tr>
-                    {paymentData.map(({ date, amount, paymentmode, remarks },index) => (
-                        
-                            <tr className='dataShow' key={index}>
-                                <td>{date}</td>
-                                <td>{amount}</td>
-                                <td>{paymentmode}</td>
-                                <td>{remarks}</td>
+                    {paymentData.map(({ date, amount, paymentmode, remarks }, index) => (
+                        <tr className='dataShow' key={index}>
+                            <td>{date}</td>
+                            <td>{amount}</td>
+                            <td>{paymentmode}</td>
+                            <td>{remarks}</td>
 
-                            </tr>
-                       
+                        </tr>
                     ))}
 
                 </tbody>
